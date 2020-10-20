@@ -12,11 +12,15 @@ void Laboratorio::agregarcomputadora(const Computadora &c){
     }
 }
 void Laboratorio::mostrar(){
-    for(int i=0;i<5;i++){
-        Computadora c=arreglo[i];
-        cout<<"nombre: "<<c.getNombre()<<endl;
-        cout<<"so: "<<c.getSo()<<endl;
-        cout<<"ram: "<<c.getRam()<<endl;
-        cout<<"precio: "<<c.getPrecio()<<endl;
+    cout << left;
+    cout << setw(10) << "nombre";
+    cout << setw(10) << "so";
+    cout << setw(10) << "ram";
+    cout << setw(10) << "precio";
+    cout << endl;
+
+    for (size_t i = 0; i < cont; ++i) {
+        Computadora &compu = arreglo[i];
+        cout << compu << endl;
     }
 }
