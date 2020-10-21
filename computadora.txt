@@ -1,0 +1,16 @@
+dell
+windows
+6
+200
+hp
+windows
+4
+100
+mac
+windows
+8
+250
+dell
+windows
+10
+1000
